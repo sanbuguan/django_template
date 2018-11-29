@@ -1,0 +1,15 @@
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    {% load static %}
+    <script src="{% static 'jquery/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    {% if js %}
+      {% for js_item in js %}
+          <script src="{% static js_item %}"></script>
+      {% endfor %}
+    {% endif %}
+
+
+  </body>
+</html>

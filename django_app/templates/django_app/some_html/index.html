@@ -1,0 +1,17 @@
+{% include './common/head.html' %}
+{% include './common/nav.html' %}
+
+    <div class="container" style='margin-top:40px'>
+
+      <div>
+        <p class="lead">
+          {% filter force_escape|lower %}
+            千里之行始于足下
+          {% endfilter %}
+        </p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+{% include './common/foot.html' %}
